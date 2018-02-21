@@ -4,12 +4,11 @@ pipeline {
             filename "Dockerfile"
             args ''
         }
-
-        stages {
-            stage ('Who Am I') {
-                steps {
-                    sh "whoami"
-                }
+    }
+    stages {
+        stage ('Who Am I') {
+            steps {
+                sh "whoami"
             }
         }
     }
