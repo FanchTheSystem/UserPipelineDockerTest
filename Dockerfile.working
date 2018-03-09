@@ -1,0 +1,8 @@
+FROM debian:stable
+
+ARG UID
+ARG GID
+RUN useradd -g $GID -u $UID -m jenkins
+
+USER jenkins:users
+WORKDIR /home/jenkins
